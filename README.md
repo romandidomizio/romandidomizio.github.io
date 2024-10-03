@@ -17,15 +17,6 @@ Welcome to my personal website! This project showcases my work, education, and e
 - **Education and Experience**: A detailed view of my academic journey and work experience.
 - **Contact Links**: Links to my GitHub, and LinkedIn.
 
-## Project Links
-
-- **3D Alien Planet Adventure**: [GitHub Repo](https://github.com/romandidomizio/alien-planet-adventure)
-- **Property Predictor**: [GitHub Repo](https://github.com/romandidomizio/property-predictor)
-- **Mountain Hike Planner**: [GitHub Repo](https://github.com/romandidomizio/mountain-hike-planner)
-- **A Love Letter to Love Letter**: [GitHub Repo](https://github.com/romandidomizio/love-letter-game)
-- **Dungeon Escape**: [GitHub Repo](https://github.com/romandidomizio/dungeon-escape)
-- **Personal Website**: [GitHub Repo](https://github.com/romandidomizio/personal-website)
-
 ## Deployment
 
 This website is hosted on GitHub Pages. 
