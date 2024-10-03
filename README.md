@@ -2,18 +2,6 @@
 
 Welcome to my personal website! This project showcases my work, education, and experience in computer science and project management. It also includes links to my projects and social profiles.
 
-## Table of Contents
-
-- [About](#about)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Project Links](#project-links)
-- [Deployment](#deployment)
-
-## About
-
-I am a fourth-year computer science student and project manager at the University of Colorado Boulder. This website was created to present my portfolio of projects, education background, and professional experience.
-
 ## Technologies Used
 
 - **HTML5**: For structuring the content of the website.
@@ -24,10 +12,10 @@ I am a fourth-year computer science student and project manager at the Universit
 ## Features
 
 - **Responsive Design**: Optimized for both desktop and mobile devices.
-- **Neon Theme**: A futuristic design that aligns with my personal brand.
+- **Neon Theme**: A sci-fi design that aligns with my favorite theme.
 - **Project Portfolio**: A showcase of my coding projects with descriptions, technologies used, GitHub repositories, and video demos.
 - **Education and Experience**: A detailed view of my academic journey and work experience.
-- **Contact Links**: Links to my GitHub, LinkedIn, and Email.
+- **Contact Links**: Links to my GitHub, and LinkedIn.
 
 ## Project Links
 
@@ -40,14 +28,6 @@ I am a fourth-year computer science student and project manager at the Universit
 
 ## Deployment
 
-This website is hosted on GitHub Pages. To deploy updates, follow these steps:
-
-1. Make sure the latest changes are committed.
-2. Push the changes to the `main` branch of the GitHub repository.
-3. GitHub Pages will automatically deploy the updates from the `/persoSite` directory.
+This website is hosted on GitHub Pages. 
 
 Visit the live website here: [Roman Di Domizio - Personal Website](https://romandidomizio.github.io/personal-website/)
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
