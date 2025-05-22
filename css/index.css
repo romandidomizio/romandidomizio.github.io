@@ -177,7 +177,7 @@
 }
 
 .aboutme-text {
-    font-size: .8rem; /* Reduced from 1.4rem */
+    font-size: 1.0rem; /* Reduced from 1.4rem */
     color: #00FFFF;
     text-align: justify; /* Added to justify text */
 }
