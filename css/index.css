@@ -126,7 +126,7 @@
 /* index */
 .name-section {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2.5rem; /* Reduced from 4rem */
     padding: 0;
     flex: 0 0 auto;
 }
@@ -146,6 +146,8 @@
     width: 100%;
     flex: 1;
     padding: 0 2rem;
+    margin-top: 2.5rem; /* Added for space below name */
+    margin-bottom: 2.5rem; /* Added for space above buttons */
 }
 
 .left-img, .right-img {
@@ -163,6 +165,10 @@
     border: 2px solid #00FFFF; /* Neon blue border */
 }
 
+.left-img .my-pic {
+    object-position: center top; /* Aligns the top of the image content to the top of its box */
+}
+
 .aboutme-container-text {
     flex: 2;
     text-align: center;
@@ -173,6 +179,7 @@
 .aboutme-text {
     font-size: 1.4rem;
     color: #00FFFF;
+    text-align: justify; /* Added to justify text */
 }
 
 /* Adjusting the buttons at the bottom, ensuring they are centered between images and the screen bottom */
@@ -180,7 +187,7 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem; /* Reduced from 7rem */
     flex: 0 0 auto;
 }
 
