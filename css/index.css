@@ -179,7 +179,7 @@
 .aboutme-text {
     font-size: 1.0rem; /* Reduced from 1.4rem */
     color: #00FFFF;
-    text-align: justify; /* Added to justify text */
+    text-align: center; /* Changed from justify to center */
 }
 
 /* Adjusting the buttons at the bottom, ensuring they are centered between images and the screen bottom */
