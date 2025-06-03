@@ -124,14 +124,20 @@
 
 
 /* index */
-.greeting-text {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.6rem;
+.name-section {
+    text-align: center;
+    margin-top: 2.0rem; /* Reduced from 4rem */
+    font-size: 2rem;
+    padding: 0;
+    flex: 0 0 auto;
+}
+
+.name-content {
+    font-family: 'Orbitron', sans-serif; /* Primary sci-fi font */
+    font-size: 2rem;
     font-weight: bold;
     color: #00FFFF; /* Neon blue */
-    text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1.0rem;
+    line-height: 1.2;
 }
 
 .aboutme-content {
@@ -140,7 +146,7 @@
     width: 100%;
     flex: 1;
     padding: 0 2rem;
-    margin-top: 0.5rem; /* Adjusted for new greeting text */
+    margin-top: 0.8rem; /* Added for space below name */
     margin-bottom: 2.5rem; /* Added for space above buttons */
 }
 
