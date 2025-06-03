@@ -126,17 +126,16 @@
 /* index */
 .name-section {
     text-align: center;
-    margin-top: 2.5rem; /* Reduced from 4rem */
+    margin-top: 2.0rem; /* Reduced from 4rem */
     padding: 0;
     flex: 0 0 auto;
 }
 
 .name-content {
     font-family: 'Orbitron', sans-serif; /* Primary sci-fi font */
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #00FFFF; /* Neon blue */
-    text-shadow: 0 0 3px #00FFFF; /* Neon glow effect */
     line-height: 1.2;
 }
 
@@ -146,7 +145,7 @@
     width: 100%;
     flex: 1;
     padding: 0 2rem;
-    margin-top: 2.5rem; /* Added for space below name */
+    margin-top: 0.8rem; /* Added for space below name */
     margin-bottom: 2.5rem; /* Added for space above buttons */
 }
 
@@ -195,9 +194,9 @@
     border: none;
     padding: 1.5rem 3rem;
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     margin: 0 1rem;
-    border-radius: 0.2em;
+    border-radius: 1em;
     background-color: #0d0d0d;
     color: #00FFFF; /* Neon blue */
     border: 2px solid #39FF14; /* Neon green border */
