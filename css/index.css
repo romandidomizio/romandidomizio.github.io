@@ -160,8 +160,8 @@
     object-position: center 5%; /* Adjusts visible part of image further down */
     border: 3px solid #00FFFF;
     /* box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); */ /* Shadow removed */
-    margin-top: 2rem; /* Increased top margin to move it down */
-    margin-bottom: 3rem;
+    margin-top: .5rem; /* Increased top margin to move it down */
+    margin-bottom: .5rem;
 }
 
 .main-narrative {
