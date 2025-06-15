@@ -101,7 +101,7 @@
 .body-class {
     margin: 0;
     background-color: #101010; /* Dark primary background */
-    color: #00FFFF; /* Neon blue as the default text color */
+    color: #E0E0E0; /* Softer white for better readability */
     font-family: 'Roboto Mono', monospace; /* Secondary futuristic font */
 }
 
@@ -112,140 +112,181 @@
     text-shadow: 0 0 15px #00FFFF; /* Neon glow effect */
     text-align: center;
     margin-top: 2rem;
-    border-bottom: 2px solid #39FF14; /* Neon green underline */
 }
-.page-content {
-    height: calc(100vh - 5rem); /* Subtract the header height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+/* New styles for scrollable index page */
+.page-content-scrollable {
+    padding: 0 2rem 5rem 2rem; /* Add padding to sides and bottom */
 }
 
+.intro-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content */
+    text-align: center;
+}
 
 /* index */
 .name-section {
     text-align: center;
-    margin-top: 2.0rem; /* Reduced from 4rem */
-    font-size: 2rem;
-    padding: 0;
-    flex: 0 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .name-content {
-    font-family: 'Orbitron', sans-serif; /* Primary sci-fi font */
-    font-size: 2rem;
-    font-weight: bold;
-    color: #00FFFF; /* Neon blue */
-    line-height: 1.2;
-}
-
-.aboutme-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    flex: 1;
-    padding: 0 2rem;
-    margin-top: 0.8rem; /* Added for space below name */
-    margin-bottom: 2.5rem; /* Added for space above buttons */
-}
-
-.left-img, .right-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.my-pic {
-    width: 300px; /* Fixed width */
-    height: 300px; /* Fixed height */
-    object-fit: cover; /* Ensures the image covers the area, cropping if necessary */
-    border-radius: 0.5rem;
-    border: 2px solid #00FFFF; /* Neon blue border */
-}
-
-.left-img .my-pic {
-    object-position: center top; /* Aligns the top of the image content to the top of its box */
-}
-
-.aboutme-container-text {
-    flex: 2;
-    text-align: center;
-    align-items: center;
-    padding: 0 1rem;
-}
-
-.aboutme-text {
-    font-size: 1.0rem; /* Reduced from 1.4rem */
-    color: #00FFFF;
-    text-align: center; /* Changed from justify to center */
-}
-
-/* Adjusting the buttons at the bottom, ensuring they are centered between images and the screen bottom */
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 4rem; /* Reduced from 7rem */
-    flex: 0 0 auto;
-}
-
-.aboutme-button {
-    border: none;
-    padding: 1.5rem 3rem;
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.0rem;
-    margin: 0 1rem;
-    border-radius: 1em;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00FFFF;
+    /* text-shadow: 0 0 10px #00FFFF; */ /* Shadow removed */
+}
+
+.elevator-pitch {
+    font-size: 1.2rem;
+    color: #E0E0E0;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    line-height: 1.6;
+}
+
+.elevator-pitch strong {
+    color: #39FF14;
+    font-weight: normal;
+}
+
+.profile-pic-circular {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    object-position: center 5%; /* Adjusts visible part of image further down */
+    border: 3px solid #00FFFF;
+    /* box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); */ /* Shadow removed */
+    margin-top: 2rem; /* Increased top margin to move it down */
+    margin-bottom: 3rem;
+}
+
+.main-narrative {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.content-subheading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: #39FF14;
+    /* text-shadow: 0 0 8px rgba(57, 255, 20, 0.7); */ /* Shadow removed */
+    border-bottom: 2px solid #39FF14;
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-narrative p {
+    font-size: 1.1rem;
+    color: #E0E0E0;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.main-narrative p strong {
+    font-weight: bold;
+    color: #00FFFF;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 4rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 2rem;
+    text-align: left;
+}
+
+.skill-category {
     background-color: #0d0d0d;
-    color: #00FFFF; /* Neon blue */
-    border: 2px solid #39FF14; /* Neon green border */
-    transition: box-shadow 0.2s, transform 0.2s;
+    padding: 1.5rem;
+    border-left: 4px solid #00FFFF;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-.aboutme-button:hover {
+.skill-category:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 5px 15px rgba(0, 255, 255, 0.1); */ /* Shadow removed */
+    border-left-color: #39FF14; /* Change border color on hover for feedback */
+}
+
+.skill-category h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    color: #00FFFF;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.skill-category p {
+    font-size: 1rem;
+    color: #E0E0E0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 3rem 2rem 2rem 2rem; /* Added more padding top, reduced bottom */
+    margin-top: 4rem; /* Space above footer */
+    margin-bottom: -6rem;
+    border-top: 1px solid #222; /* Subtle top border */
+}
+
+.footer-heading {
+    margin-bottom: 2rem; /* Space below footer heading */
+    font-size: 1.6rem; /* Slightly smaller footer heading */
+    border-bottom-color: rgba(57, 255, 20, 0.3); /* More subtle border */
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Adjusted gap */
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    padding: 0.6rem 1.2rem; /* Adjusted padding */
+    font-family: 'Roboto Mono', monospace; /* Consistent font */
+    font-size: 0.9rem;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #00FFFF;
+    border: 1px solid #00FFFF;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
     cursor: pointer;
-    box-shadow: 0 0 15px #00FFFF, 0 0 30px #39FF14; /* Neon blue and green glow */
-    transform: scale(1.05);
+    background-color: #00FFFF;
+    color: #000;
+    border-color: #00FFFF;
+    /* box-shadow: 0 0 10px #00FFFF; */ /* Shadow removed */
+    transform: scale(1.03);
 }
 
-/* Small screen adjustments */
-@media (max-width: 970px) {
-    .name-content {
-        font-size: 3rem; /* Smaller font for smaller screens */
-    }
+.copyright {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 2rem;
+}
 
-    .aboutme-content {
-        flex-direction: column; /* Stack the images on top of each other */
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem; /* Add some extra space between sections */
-    }
-
-    .aboutme-container-text {
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem; /* Extra space between text and images */
-    }
-
-    /* Stack the buttons vertically */
-    .button-container {
-        flex-direction: column;
-        align-items: center; /* Ensure buttons are centered horizontally */
-        gap: 1.5rem; /* Extra space between stacked buttons */
-        margin-bottom: 3rem; /* Extra space between buttons and screen bottom */
-    }
-
-    .aboutme-button {
-        width: 100%; /* Ensure buttons take up full width */
-        text-align: center;
-    }
-
-    /* Add extra space between second image and buttons */
-    .right-img {
-        margin-bottom: 2rem; /* Adds more space between image and buttons */
-    }
-    .left-img, .right-img {
-        width: 50%;
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
     }
 }
 
@@ -332,6 +373,7 @@
 .class-description {
     font-size: 1.1rem;
     color: #E0E0E0;
+    text-align: center;
     line-height: 1.6;
 }
 
@@ -349,6 +391,49 @@
     left: 0; /* Aligns the bullet point with the text */
     font-size: 1.3rem; /* Makes the bullet point slightly larger */
     line-height: 1.6;
+}
+
+.job-description {
+    font-size: 1.1rem;
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+.job-description li {
+    list-style-type: none; /* Removes bullet points */
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.job-description li::before {
+    content: "•"; /* Adds a bullet point */
+    color: #39FF14; /* Neon green for bullet points */
+    position: absolute;
+    left: 0; /* Aligns the bullet point with the text */
+    font-size: 1.3rem; /* Makes the bullet point slightly larger */
+    line-height: 1.6;
+}
+
+.masters-program-box {
+    background-color: #0d0d0d; /* Slightly different dark background */
+    padding: 1.5rem; /* More padding */
+    margin-bottom: 2rem; /* Space below */
+    border-left: 5px solid #39FF14; /* Neon green accent border */
+    border-radius: 0.3rem; /* Subtle rounded corners */
+    width: clamp(60%, 65rem, 90%); /* Responsive width */
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.3); /* Subtle neon green glow */
+}
+
+.masters-program-box .class-name {
+    color: #39FF14; /* Neon green for the program name */
+    font-size: 1.7rem; /* Larger font for program name */
+}
+
+.masters-program-box .class-location-date {
+    font-size: 1.1rem; /* Slightly larger date/location */
+    color: #00FFFF; /* Neon blue for details */
+    margin-bottom: 0.5rem; /* Adjusted margin */
 }
 
 /* Media query to adjust layout for smaller screens */
