@@ -192,6 +192,11 @@
     color: #00FFFF;
 }
 
+.main-narrative ul li b {
+    font-weight: bold;
+    color: #00FFFF; /* Ensure these titles are bold and match other strong emphasis */
+}
+
 /* Skills Section */
 .skills-section {
     margin-bottom: 4rem;
