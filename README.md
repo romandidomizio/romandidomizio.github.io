@@ -21,4 +21,4 @@ Welcome to my personal website! This project showcases my work, education, and e
 
 This website is hosted on GitHub Pages. 
 
-Visit the live website here: [Roman Di Domizio - Personal Website](https://romandidomizio.github.io/Personal-Website/)
+Visit the live website here: [Roman Di Domizio - Personal Website](https://romandidomizio.com)
