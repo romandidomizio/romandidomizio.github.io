@@ -197,6 +197,43 @@
     color: #00FFFF; /* Ensure these titles are bold and match other strong emphasis */
 }
 
+/* Publications Section */
+.publications-section {
+    text-align: center;
+    margin: 2.5rem 0 3rem 0;
+}
+
+.publication-links {
+    margin: 1.5rem 0;
+}
+
+.publication-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #00FFFF;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #00FFFF;
+    border-radius: 6px;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.publication-link:hover {
+    background-color: #00FFFF;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.publications-divider {
+    font-size: 1rem;
+    color: #999;
+    font-style: italic;
+    margin-top: 1.5rem;
+}
+
 /* Skills Section */
 .skills-section {
     margin-bottom: 4rem;
