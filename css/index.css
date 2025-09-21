@@ -197,41 +197,307 @@
     color: #00FFFF; /* Ensure these titles are bold and match other strong emphasis */
 }
 
-/* Publications Section */
-.publications-section {
+/* Hero Section */
+.hero-section {
     text-align: center;
-    margin: 2.5rem 0 3rem 0;
+    margin-bottom: 3rem;
 }
 
-.publication-links {
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.professional-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.summary-text {
+    font-size: 1.3rem;
+    color: #E0E0E0;
+    line-height: 1.6;
+    max-width: 500px;
+    text-align: left;
+    margin: 0;
+}
+
+.profile-pic-compact {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 5%;
+    border: 3px solid #00FFFF;
+    flex-shrink: 0;
+}
+
+/* Business Ventures Section */
+.business-ventures {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.ventures-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    color: #39FF14;
+    margin-bottom: 0.5rem;
+}
+
+.ventures-subtitle {
+    font-size: 1.1rem;
+    color: #999;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+}
+
+.venture-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.venture-card {
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.venture-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(57, 255, 20, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.venture-card::after {
+    content: 'Click to explore →';
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    font-size: 0.85rem;
+    color: #39FF14;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.venture-card:hover::before {
+    left: 100%;
+}
+
+.venture-card:hover::after {
+    opacity: 1;
+}
+
+.venture-card:hover {
+    border-color: #39FF14;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(57, 255, 20, 0.3);
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.card-header h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #00FFFF;
+    margin: 0;
+}
+
+.card-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.venture-card:hover .card-logo {
+    transform: translateX(5px) scale(1.1);
+}
+
+.card-url {
+    font-size: 0.9rem;
+    color: #39FF14;
+    margin: 0 0 1rem 0;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #E0E0E0;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.card-highlight {
+    background: linear-gradient(90deg, rgba(57, 255, 20, 0.2), rgba(0, 255, 255, 0.2));
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(57, 255, 20, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.card-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.tag {
+    background-color: rgba(57, 255, 20, 0.1);
+    color: #39FF14;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(57, 255, 20, 0.3);
+}
+
+/* Alternative Actions */
+.alternative-actions {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.action-divider {
     margin: 1.5rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.publication-link {
-    display: inline-block;
+.action-divider::before,
+.action-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #333;
+    max-width: 80px;
+}
+
+.action-divider::before {
+    margin-right: 1rem;
+}
+
+.action-divider::after {
+    margin-left: 1rem;
+}
+
+.divider-text {
+    font-size: 1rem;
+    color: #777;
+    font-style: italic;
+    white-space: nowrap;
+    padding: 0 0.5rem;
+}
+
+.action-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.action-link {
     text-decoration: none;
     color: #00FFFF;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 0.8rem 1.5rem;
-    border: 2px solid #00FFFF;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #00FFFF;
     border-radius: 6px;
-    margin: 0.5rem;
     transition: all 0.3s ease;
-    background-color: transparent;
 }
 
-.publication-link:hover {
+.action-link:hover {
     background-color: #00FFFF;
     color: #000;
-    transform: translateY(-2px);
 }
 
-.publications-divider {
-    font-size: 1rem;
-    color: #999;
-    font-style: italic;
-    margin-top: 1.5rem;
+.action-separator {
+    color: #555;
+    font-size: 1.2rem;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .professional-summary {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .summary-text {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .venture-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .action-separator {
+        display: none;
+    }
 }
 
 /* Skills Section */
