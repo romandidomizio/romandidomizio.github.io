@@ -764,6 +764,13 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+.class-organization {
+    font-size: 1rem;
+    color: #00FFFF;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
 .class-location-date {
     font-size: 1rem;
     color: #39FF14;
