@@ -280,8 +280,8 @@
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .chip {
@@ -527,6 +527,9 @@ html {
     .action-separator {
         display: none;
     }
+    .name-content {
+        font-size: 2rem;
+    }
 }
 
 /* Skills Section */
@@ -636,6 +639,16 @@ footer {
     padding: 2rem;
     max-width: 1600px;
     margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .education-container {
+        flex-direction: column;
+    }
+
+    .education-column {
+        width: 100%;
+    }
 }
 
 .education-column {
@@ -906,7 +919,6 @@ footer {
     color: #00FFFF; /* Neon blue */
     font-size: 1.8rem;
     font-weight: bold;
-    text-shadow: 0 0 10px #00FFFF;
     margin-bottom: 1rem;
 }
 
