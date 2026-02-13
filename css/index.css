@@ -277,10 +277,11 @@
 
 .focus-chips {
     display: flex;
-    gap: 0.75rem;
+    gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: -1.5rem;
 }
 
 .chip {
@@ -335,6 +336,15 @@
     line-height: 1.6;
 }
 
+.impact-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.impact-cta .cta-btn {
+    display: inline-block;
+}
+
 /* Interests */
 .interests-section {
     margin: 3rem 0 4rem 0;
@@ -365,16 +375,17 @@
     box-shadow: 0 25px 60px rgba(0, 255, 200, 0.12);
 }
 
+
 .mars-content {
     display: flex;
+    flex-direction: column;
     gap: 2.5rem;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 .mars-text {
-    flex: 1 1 420px;
+    max-width: 720px;
 }
 
 .mars-text h2 {
@@ -387,15 +398,17 @@
     line-height: 1.8;
 }
 
+
 .mars-visual {
-    flex: 0 0 260px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .mars-visual img {
-    max-width: 100%;
+    max-width: 360px;
     border-radius: 18px;
-    border: 2px solid rgba(0, 255, 255, 0.55);
-    box-shadow: 0 20px 45px rgba(0, 255, 200, 0.2);
+    margin: 0 auto;
 }
 
 .mars-cta {
