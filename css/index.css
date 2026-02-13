@@ -227,8 +227,8 @@
 }
 
 .profile-pic-compact {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center 5%;
@@ -263,6 +263,11 @@
 .secondary-cta {
     border-color: #39FF14;
     color: #39FF14;
+}
+
+.tertiary-cta {
+    border-color: rgba(0, 255, 255, 0.6);
+    color: #00FFFF;
 }
 
 .cta-btn:hover {
@@ -338,6 +343,7 @@
 .interest-tags {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.75rem;
 }
 
@@ -348,6 +354,68 @@
     font-size: 0.95rem;
     color: #39FF14;
     background-color: rgba(57, 255, 20, 0.08);
+}
+
+.mars-showcase {
+    margin: 4rem 0;
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    border-radius: 28px;
+    padding: 3rem;
+    background: radial-gradient(circle at center, rgba(0, 255, 255, 0.18), rgba(0, 0, 0, 0.85));
+    box-shadow: 0 25px 60px rgba(0, 255, 200, 0.12);
+}
+
+.mars-content {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mars-text {
+    flex: 1 1 420px;
+}
+
+.mars-text h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.mars-text p {
+    margin-top: 0;
+    line-height: 1.8;
+}
+
+.mars-visual {
+    flex: 0 0 260px;
+}
+
+.mars-visual img {
+    max-width: 100%;
+    border-radius: 18px;
+    border: 2px solid rgba(0, 255, 255, 0.55);
+    box-shadow: 0 20px 45px rgba(0, 255, 200, 0.2);
+}
+
+.mars-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .mars-showcase {
+        padding: 1.75rem;
+    }
+    .mars-content {
+        flex-direction: column-reverse;
+    }
+    .hero-cta {
+        flex-direction: column;
+    }
 }
 
 /* Alternative Actions */
