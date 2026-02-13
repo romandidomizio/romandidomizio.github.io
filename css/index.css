@@ -236,170 +236,118 @@
     flex-shrink: 0;
 }
 
-/* Business Ventures Section */
-.business-ventures {
-    margin: 4rem 0;
-    text-align: center;
-}
-
-.ventures-heading {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.2rem;
-    color: #39FF14;
-    margin-bottom: 0.5rem;
-}
-
-.ventures-subtitle {
-    font-size: 1.1rem;
-    color: #999;
-    margin-bottom: 2.5rem;
-    font-style: italic;
-}
-
-.venture-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.venture-card {
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
-    border: 2px solid #333;
-    border-radius: 12px;
-    padding: 2rem;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    min-height: 280px;
+.hero-cta {
     display: flex;
-    flex-direction: column;
-}
-
-.venture-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(57, 255, 20, 0.1), transparent);
-    transition: left 0.6s ease;
-}
-
-.venture-card::after {
-    content: 'Click to explore →';
-    position: absolute;
-    bottom: 0.5rem;
-    right: 1rem;
-    font-size: 0.85rem;
-    color: #39FF14;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    z-index: 2;
-}
-
-.venture-card:hover::before {
-    left: 100%;
-}
-
-.venture-card:hover::after {
-    opacity: 1;
-}
-
-.venture-card:hover {
-    border-color: #39FF14;
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 30px rgba(57, 255, 20, 0.3);
-}
-
-.card-content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.card-header h3 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.5rem;
-    color: #00FFFF;
-    margin: 0;
-}
-
-.card-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-    border-radius: 8px;
-}
-
-.venture-card:hover .card-logo {
-    transform: translateX(5px) scale(1.1);
-}
-
-.card-url {
-    font-size: 0.9rem;
-    color: #39FF14;
-    margin: 0 0 1rem 0;
-    font-family: 'Roboto Mono', monospace;
-    text-align: left;
-}
-
-.card-description {
-    font-size: 1rem;
-    color: #E0E0E0;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    text-align: left;
-    flex-grow: 1;
-}
-
-.card-highlight {
-    background: linear-gradient(90deg, rgba(57, 255, 20, 0.2), rgba(0, 255, 255, 0.2));
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 1rem;
-    border: 1px solid rgba(57, 255, 20, 0.4);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
-}
-
-.card-tags {
-    display: flex;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 1.25rem;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin: 2rem 0 1rem 0;
 }
 
-.tag {
-    background-color: rgba(57, 255, 20, 0.1);
+.cta-btn {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 2px solid transparent;
+}
+
+.primary-cta {
+    background: linear-gradient(135deg, #39FF14, #00FFFF);
+    color: #0d0d0d;
+    box-shadow: 0 10px 25px rgba(0, 255, 170, 0.35);
+}
+
+.secondary-cta {
+    border-color: #39FF14;
     color: #39FF14;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    border: 1px solid rgba(57, 255, 20, 0.3);
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 255, 200, 0.25);
+}
+
+.focus-chips {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.chip {
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    color: #00FFFF;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    background-color: rgba(0, 255, 255, 0.08);
+}
+
+/* Business Ventures Section */
+
+/* Impact Highlights */
+.impact-highlights {
+    margin: 4rem 0;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.impact-card {
+    border: 1px solid rgba(57, 255, 20, 0.4);
+    border-radius: 16px;
+    padding: 1.75rem;
+    background: linear-gradient(180deg, rgba(0, 255, 255, 0.08), rgba(0, 0, 0, 0.6));
+    box-shadow: 0 10px 30px rgba(0, 255, 200, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-6px);
+    border-color: #39FF14;
+}
+
+.impact-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+}
+
+.impact-meta {
+    font-size: 0.95rem;
+    color: #9ef5b1;
+    margin-bottom: 0.75rem;
+}
+
+.impact-card p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Interests */
+.interests-section {
+    margin: 3rem 0 4rem 0;
+}
+
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.interest-tag {
+    border: 1px solid rgba(57, 255, 20, 0.5);
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    color: #39FF14;
+    background-color: rgba(57, 255, 20, 0.08);
 }
 
 /* Alternative Actions */
