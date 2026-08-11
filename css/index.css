@@ -1066,3 +1066,51 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Single-column education layout */
+.education-single {
+    justify-content: center;
+}
+
+.education-single .education-column {
+    width: 100%;
+    max-width: 900px;
+    max-height: none;
+    overflow-y: visible;
+}
+
+.grad-note {
+    border-left: 4px solid rgba(0, 255, 255, 0.5);
+    background-color: #0a0a0a;
+    padding: 1rem 1.25rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+}
+
+.grad-note p {
+    margin: 0;
+    color: #cccccc;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* About page */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 2rem 5rem 2rem;
+    text-align: center;
+}
+
+.about-container .main-narrative {
+    margin-top: 1rem;
+}
+
+/* Certifications grouping heading */
+.cert-group-heading {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
