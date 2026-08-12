@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Site-wide design system — romandidomizio.com
+   Site-wide design system - romandidomizio.com
    One shared stylesheet: tokens, base, header/footer, components, pages.
    ========================================================================== */
 
@@ -658,8 +658,8 @@ video.hm-entry-media {
 
 .hm-portrait {
     width: 100%;
-    height: 250px;
-    max-height: 250px;
+    height: 240px;
+    max-height: 240px;
     object-fit: cover;
     object-position: 50% 0%;
     border-radius: 18px;
@@ -924,7 +924,7 @@ video.hm-entry-media {
     }
 
     .hm-portrait {
-        max-height: 230px;
+        max-height: 220px;
     }
 }
 
@@ -946,6 +946,11 @@ video.hm-entry-media {
         padding-top: 2.5rem;
     }
 
+    .hm-hero .hm-eyebrow {
+        font-size: 0.62rem;
+        letter-spacing: 0.12em;
+    }
+
     .hm-hero-grid {
         grid-template-columns: 1fr;
         gap: 1.25rem;
@@ -953,8 +958,8 @@ video.hm-entry-media {
 
     .hm-portrait {
         max-width: 160px;
-        height: 190px;
-        max-height: 190px;
+        height: 180px;
+        max-height: 180px;
         order: 1;
         justify-self: center;
     }
