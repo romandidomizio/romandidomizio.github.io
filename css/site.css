@@ -427,9 +427,9 @@ button:focus-visible {
     width: 56px;
     height: 56px;
     object-fit: contain;
-    border-radius: 10px;
-    background: rgba(226, 232, 240, 0.92);
-    padding: 6px;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
     box-sizing: border-box;
     flex-shrink: 0;
 }
@@ -503,15 +503,15 @@ button:focus-visible {
 .hm-entry-media {
     display: block;
     width: 100%;
-    max-height: 380px;
+    max-height: 280px;
     object-fit: contain;
     border-radius: 10px;
     margin: 0 auto 1.25rem auto;
-    background: rgba(6, 9, 19, 0.5);
+    background: transparent;
 }
 
 .hm-entry-media-sm {
-    max-height: 180px;
+    max-height: 160px;
 }
 
 .hm-media-pair {
@@ -523,10 +523,11 @@ button:focus-visible {
 .hm-media-pair .hm-entry-media {
     min-width: 0;
     margin-bottom: 0;
+    max-height: 220px;
 }
 
 video.hm-entry-media {
-    max-height: none;
+    max-height: 280px;
     border: 1px solid var(--hm-border);
 }
 
@@ -609,7 +610,7 @@ video.hm-entry-media {
     width: 100%;
     height: auto;
     border-radius: var(--hm-radius);
-    border: 1px solid var(--hm-border);
+    border: 0;
     display: block;
 }
 
@@ -620,7 +621,7 @@ video.hm-entry-media {
 
 .hm-hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 220px;
+    grid-template-columns: minmax(0, 1fr) 160px;
     gap: 3rem;
     align-items: center;
 }
@@ -654,8 +655,11 @@ video.hm-entry-media {
 .hm-portrait {
     width: 100%;
     height: auto;
+    max-height: 220px;
+    object-fit: cover;
+    object-position: top;
     border-radius: 18px;
-    border: 1px solid var(--hm-border);
+    border: 0;
     box-shadow: 0 20px 45px rgba(3, 7, 18, 0.55);
     display: block;
 }
@@ -789,36 +793,19 @@ video.hm-entry-media {
 }
 
 /* ------------------------- Homepage: explore ---------------------------- */
-.hm-explore-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0.9rem;
+.hm-explore-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.55rem;
+    flex-wrap: wrap;
+    margin: 1.25rem 0 0 0;
 }
 
-.hm-explore-link {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    background: var(--hm-panel);
-    border: 1px solid var(--hm-border);
-    border-radius: 12px;
-    padding: 1rem 0.6rem;
-    color: var(--hm-text);
-    font-size: 0.85rem;
-    transition: border-color 0.25s ease, transform 0.25s ease;
+.hm-explore-actions .hm-btn-sm {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.85rem;
 }
 
-.hm-explore-link span {
-    display: block;
-    color: var(--hm-muted);
-    font-size: 0.7rem;
-    margin-top: 0.3rem;
-}
-
-.hm-explore-link:hover {
-    border-color: var(--hm-border-strong);
-    transform: translateY(-3px);
-}
 
 /* ------------------------- Homepage: contact ---------------------------- */
 .hm-contact {
@@ -919,7 +906,7 @@ video.hm-entry-media {
     }
 
     .hm-hero-grid {
-        grid-template-columns: minmax(0, 1fr) 180px;
+        grid-template-columns: minmax(0, 1fr) 140px;
         gap: 2rem;
     }
 
@@ -930,6 +917,10 @@ video.hm-entry-media {
 
     .hm-media-split .hm-photo {
         max-width: 420px;
+    }
+
+    .hm-portrait {
+        max-height: 200px;
     }
 }
 
@@ -953,12 +944,14 @@ video.hm-entry-media {
 
     .hm-hero-grid {
         grid-template-columns: 1fr;
-        gap: 1.75rem;
+        gap: 1.25rem;
     }
 
     .hm-portrait {
-        max-width: 190px;
-        order: -1;
+        max-width: 130px;
+        max-height: 160px;
+        order: 1;
+        justify-self: center;
     }
 
     .hm-hero-cta .hm-btn {
