@@ -249,6 +249,10 @@ button:focus-visible {
     margin: 4.5rem 0;
 }
 
+.hm-hero + .hm-section {
+    margin-top: 2.5rem;
+}
+
 .hm-section-head {
     margin-bottom: 1.75rem;
 }
@@ -424,8 +428,8 @@ button:focus-visible {
 }
 
 .hm-entry-logo {
-    width: 56px;
-    height: 56px;
+    width: 72px;
+    height: 72px;
     object-fit: contain;
     border-radius: 0;
     background: transparent;
@@ -616,12 +620,12 @@ video.hm-entry-media {
 
 /* -------------------------- Homepage: hero ------------------------------ */
 .hm-hero {
-    padding: 4.5rem 0 3rem 0;
+    padding: 4.5rem 0 2rem 0;
 }
 
 .hm-hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 160px;
+    grid-template-columns: minmax(0, 1fr) 200px;
     gap: 3rem;
     align-items: center;
 }
@@ -654,10 +658,10 @@ video.hm-entry-media {
 
 .hm-portrait {
     width: 100%;
-    height: auto;
-    max-height: 220px;
+    height: 250px;
+    max-height: 250px;
     object-fit: cover;
-    object-position: top;
+    object-position: 50% 0%;
     border-radius: 18px;
     border: 0;
     box-shadow: 0 20px 45px rgba(3, 7, 18, 0.55);
@@ -906,7 +910,7 @@ video.hm-entry-media {
     }
 
     .hm-hero-grid {
-        grid-template-columns: minmax(0, 1fr) 140px;
+        grid-template-columns: minmax(0, 1fr) 170px;
         gap: 2rem;
     }
 
@@ -920,7 +924,7 @@ video.hm-entry-media {
     }
 
     .hm-portrait {
-        max-height: 200px;
+        max-height: 230px;
     }
 }
 
@@ -948,8 +952,9 @@ video.hm-entry-media {
     }
 
     .hm-portrait {
-        max-width: 130px;
-        max-height: 160px;
+        max-width: 160px;
+        height: 190px;
+        max-height: 190px;
         order: 1;
         justify-self: center;
     }
