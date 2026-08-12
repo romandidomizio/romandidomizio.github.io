@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Roman Di Domizio - Projects</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="description" content="Projects by Roman Di Domizio: machine learning for Mars rover telemetry, full-stack products, AI agents, games, and more.">
+    <link rel="canonical" href="https://romandidomizio.com/projects.html">
+    <link rel="stylesheet" href="css/site.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
@@ -29,133 +32,183 @@
     </script>
     <!-- End Matomo Code -->
 </head>
-<body class="body-class">
+<body>
+    <a href="#main" class="hm-skip-link">Skip to main content</a>
     <div id="header-placeholder"></div>
 
-    <div class="page-content">
-        <div class="page-name">Projects</div>
-        <div class="projects-content">
+    <main id="main" class="hm-main">
+        <header class="hm-page-header">
+            <p class="hm-eyebrow">Projects</p>
+            <h1 class="hm-page-title">Things I've shipped</h1>
+            <p class="hm-page-sub">Machine learning for Mars rover telemetry, full-stack products, AI agents, and games — built end to end.</p>
+        </header>
 
+        <div class="hm-entries">
             <!-- Power Anomaly Detection for Mars Rover -->
-            <div class="project-box">
-                <img class="project-image-large" src="img/MSL.png" alt="Mars Curiosity Rover Anomaly Detection">
-                <p class="project-name">Power Anomaly Detection for Mars Rover</p>
-                <p class="technologies">Python, scikit-learn, NumPy, SciPy</p>
-                <p class="technologies">Supervised Learning | November 2025–December 2025</p>
-                <a href="https://github.com/romandidomizio/space-autonomy" target="_blank" style="color:#39FF14; text-align: center; display: block;">github.com/romandidomizio/space-autonomy</a>
-                <ul class="project-description">
+            <article class="hm-entry">
+                <img class="hm-entry-media" src="img/MSL.png" alt="Mars Curiosity rover anomaly detection visualization" width="1000" height="432" loading="lazy">
+                <h2 class="hm-entry-title">Power Anomaly Detection for Mars Rover</h2>
+                <p class="hm-entry-org">Supervised Learning &bull; November 2025&ndash;December 2025</p>
+                <p class="hm-entry-meta"><a href="https://github.com/romandidomizio/space-autonomy" target="_blank" rel="noopener" class="hm-entry-link">github.com/romandidomizio/space-autonomy</a></p>
+                <div class="hm-tags">
+                    <span class="hm-tag">Python</span>
+                    <span class="hm-tag">scikit-learn</span>
+                    <span class="hm-tag">NumPy</span>
+                    <span class="hm-tag">SciPy</span>
+                </div>
+                <ul class="hm-bullets" style="margin-top: 1rem;">
                     <li>Built a supervised classifier for NASA Curiosity Rover power telemetry using Python, scikit-learn, NumPy, and SciPy</li>
                     <li>Engineered 23 features from sliding windows; achieved 1.0 PR-AUC with Random Forest handling 2% class imbalance</li>
                 </ul>
-            </div>
+            </article>
 
             <!-- Sugar -->
-            <div class="project-box">
-                <img class="project-image-large" src="img/sugar.png" alt="Sugar Logo" style="max-width: 200px;">
-                <p class="project-name">Entrepreneurial Capstone, Technical Lead</p>
-                <p class="technologies">React Native, Node.js, MongoDB, CI/CD, Figma, Agile</p>
-                <p class="technologies">CU Entrepreneurial Capstone | September 2024–May 2025</p>
-                <a href="https://github.com/romandidomizio/Sugar.git" target="_blank" style="color:#39FF14; text-align: center; display: block;">github.com/romandidomizio/Sugar.git</a>
-                <ul class="project-description">
+            <article class="hm-entry">
+                <img class="hm-entry-media hm-entry-media-sm" src="img/sugar.png" alt="Sugar app logo" width="200" height="200" loading="lazy">
+                <h2 class="hm-entry-title">Sugar &mdash; Entrepreneurial Capstone, Technical Lead</h2>
+                <p class="hm-entry-org">CU Entrepreneurial Capstone &bull; September 2024&ndash;May 2025</p>
+                <p class="hm-entry-meta"><a href="https://github.com/romandidomizio/Sugar.git" target="_blank" rel="noopener" class="hm-entry-link">github.com/romandidomizio/Sugar</a></p>
+                <div class="hm-tags">
+                    <span class="hm-tag">React Native</span>
+                    <span class="hm-tag">Node.js</span>
+                    <span class="hm-tag">MongoDB</span>
+                    <span class="hm-tag">CI/CD</span>
+                    <span class="hm-tag">Figma</span>
+                    <span class="hm-tag">Agile</span>
+                </div>
+                <ul class="hm-bullets" style="margin-top: 1rem;">
                     <li>Co-founded and built a React Native mobile marketplace to reduce food waste and improve local community exchange</li>
                     <li>Led a six-person Agile team from Figma prototype to full-stack MVP using Node.js, MongoDB, CI/CD, and live user testing</li>
                 </ul>
-            </div>
-
+            </article>
 
             <!-- AI Mancala Player -->
-            <div class="project-box">
-                <img class="project-image-large" src="img/mancala.png" alt="AI Mancala Output Image">
-                <p class="project-name">Mancala AI Agent</p>
-                <p class="technologies">Python, Minimax, Alpha-Beta</p>
-                <p class="technologies">Introduction to AI | October 2024–December 2024</p>
-                <a href="https://github.com/lugo7099/Mancala.git" target="_blank" style="color:#39FF14; text-align: center; display: block;">github.com/lugo7099/Mancala.git</a>
-                <ul class="project-description">
+            <article class="hm-entry">
+                <img class="hm-entry-media" src="img/mancala.png" alt="Mancala AI agent output" width="1000" height="432" loading="lazy">
+                <h2 class="hm-entry-title">Mancala AI Agent</h2>
+                <p class="hm-entry-org">Introduction to AI &bull; October 2024&ndash;December 2024</p>
+                <p class="hm-entry-meta"><a href="https://github.com/lugo7099/Mancala.git" target="_blank" rel="noopener" class="hm-entry-link">github.com/lugo7099/Mancala</a></p>
+                <div class="hm-tags">
+                    <span class="hm-tag">Python</span>
+                    <span class="hm-tag">Minimax</span>
+                    <span class="hm-tag">Alpha-Beta</span>
+                </div>
+                <ul class="hm-bullets" style="margin-top: 1rem;">
                     <li>Built classical AI Mancala agents in Python with a custom heuristic, reaching 97% Minimax and 99% Alpha-Beta win rates</li>
                 </ul>
-            </div>
+            </article>
 
-            <!-- 3D UFO Adventure -->            <div class="project-box">
-                <video controls width="100%" style="border: 2px solid #00FFFF; border-radius: 10px;">
-                    <source src="videos/DemoVideo.webm" type="video/webm" alt="3D UFO Adventure Demo">
+            <!-- 3D UFO Adventure -->
+            <article class="hm-entry">
+                <video controls class="hm-entry-media" preload="metadata" aria-label="3D UFO Adventure demo video">
+                    <source src="videos/DemoVideo.webm" type="video/webm">
                     Your browser does not support the video tag.
                 </video>
-                <p class="project-name">3D UFO Adventure</p>
-                <p class="technologies">C, OpenGL, GLUT/GLU</p>
-                <p class="technologies">Computer Graphics | September 2024–December 2024</p>
-                <a href="https://github.com/romandidomizio/3D-UFO-Adventure.git" target="_blank" style="color:#39FF14; text-align: center; display: block;">github.com/romandidomizio/3D-UFO-Adventure.git</a>
-                <ul class="project-description">
+                <h2 class="hm-entry-title">3D UFO Adventure</h2>
+                <p class="hm-entry-org">Computer Graphics &bull; September 2024&ndash;December 2024</p>
+                <p class="hm-entry-meta"><a href="https://github.com/romandidomizio/3D-UFO-Adventure.git" target="_blank" rel="noopener" class="hm-entry-link">github.com/romandidomizio/3D-UFO-Adventure</a></p>
+                <div class="hm-tags">
+                    <span class="hm-tag">C</span>
+                    <span class="hm-tag">OpenGL</span>
+                    <span class="hm-tag">GLUT/GLU</span>
+                </div>
+                <ul class="hm-bullets" style="margin-top: 1rem;">
                     <li>Developed a real-time 3D scene with a controllable UFO, third-person camera, textures, dynamic lighting, and visual effects</li>
                 </ul>
-            </div>
-        
+            </article>
+
             <!-- Property Predictor -->
-            <div class="project-box">
-                <img class="project-image-large" src="img/newplot.png" alt="Property Predictor">
-                <p class="project-name">Property Predictor</p>
-                <a href="https://github.com/romandidomizio/Data-Science-Property-Predictor.git" target="_blank" style="color:#39FF14; text-align: center; display: block;">GitHub Repo Link</a>
-                <p class="technologies">Technologies: Python, Pandas, Seaborn, Scikit-learn, Matplotlib, Plotly</p>
-                <ul class="project-description">
-                    <li>Engineered and cleaned a dataset of 500,000+ property records, leveraging Python and data science libraries.</li>
-                    <li>Built and evaluated regression models with Scikit-learn, addressing biases for fair predictive analysis.</li>
+            <article class="hm-entry">
+                <img class="hm-entry-media" src="img/newplot.png" alt="Property Predictor regression plot" width="1000" height="432" loading="lazy">
+                <h2 class="hm-entry-title">Property Predictor</h2>
+                <p class="hm-entry-meta"><a href="https://github.com/romandidomizio/Data-Science-Property-Predictor.git" target="_blank" rel="noopener" class="hm-entry-link">github.com/romandidomizio/Data-Science-Property-Predictor</a></p>
+                <div class="hm-tags">
+                    <span class="hm-tag">Python</span>
+                    <span class="hm-tag">Pandas</span>
+                    <span class="hm-tag">Seaborn</span>
+                    <span class="hm-tag">scikit-learn</span>
+                    <span class="hm-tag">Matplotlib</span>
+                    <span class="hm-tag">Plotly</span>
+                </div>
+                <ul class="hm-bullets" style="margin-top: 1rem;">
+                    <li>Engineered and cleaned a dataset of 500,000+ property records, leveraging Python and data science libraries</li>
+                    <li>Built and evaluated regression models with Scikit-learn, addressing biases for fair predictive analysis</li>
                 </ul>
-            </div>
-        
+            </article>
+
             <!-- Mountain Hike Planner -->
-            <div class="project-box">
-                <img class="project-image-large" src="img/MHP.png" alt="Mountain Hike Planner">
-                <p class="project-name">Mountain Hike Planner</p>
-                <a href="https://github.com/romandidomizio/Mountain-Hike-Planner.git" target="_blank" style="color:#39FF14; text-align: center; display: block;">GitHub Repo Link</a>
-                <p class="technologies">Technologies: Java, JavaFX, Jackson</p>
-                <ul class="project-description">
-                    <li>Designed an interactive Java desktop app for hikers to customize gear selection using JavaFX and Jackson.</li>
-                    <li>Applied Singleton, Factory, Observer, and Strategy patterns, with unit and BDD testing ensuring 80% code coverage.</li>
+            <article class="hm-entry">
+                <img class="hm-entry-media" src="img/MHP.png" alt="Mountain Hike Planner application" width="1000" height="432" loading="lazy">
+                <h2 class="hm-entry-title">Mountain Hike Planner</h2>
+                <p class="hm-entry-meta"><a href="https://github.com/romandidomizio/Mountain-Hike-Planner.git" target="_blank" rel="noopener" class="hm-entry-link">github.com/romandidomizio/Mountain-Hike-Planner</a></p>
+                <div class="hm-tags">
+                    <span class="hm-tag">Java</span>
+                    <span class="hm-tag">JavaFX</span>
+                    <span class="hm-tag">Jackson</span>
+                </div>
+                <ul class="hm-bullets" style="margin-top: 1rem;">
+                    <li>Designed an interactive Java desktop app for hikers to customize gear selection using JavaFX and Jackson</li>
+                    <li>Applied Singleton, Factory, Observer, and Strategy patterns, with unit and BDD testing ensuring 80% code coverage</li>
                 </ul>
-            </div>
-        
+            </article>
+
             <!-- A Love Letter to Love Letter -->
-            <div class="project-box">
-                <video controls width="100%" style="border: 2px solid #00FFFF; border-radius: 10px;">
-                    <source src="videos/game_demo.mp4" type="video/mp4" alt="A Love Letter Game Demo">
+            <article class="hm-entry">
+                <video controls class="hm-entry-media" preload="metadata" aria-label="A Love Letter to Love Letter game demo video">
+                    <source src="videos/game_demo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p class="project-name">A Love Letter to Love Letter</p>
-                <a href="https://gitfront.io/r/romandidomizio/e4smkwEyUSU1/Software-Dev-Project/" target="_blank" style="color:#39FF14; text-align: center; display: block;">GitHub Repo Link</a>
-                <p class="technologies">Technologies: Python, Flask, PostgreSQL, JavaScript, HTML/CSS, Agile (Scrum), GitHub</p>
-                <ul class="project-description">
-                    <li>Developed a full-stack web-based card game using Python, Flask, PostgreSQL, JavaScript, and HTML/CSS.</li>
-                    <li>Collaborated with a team using GitHub, Trello, and Agile (Scrum) for development and project management.</li>
-                </ul>
-            </div>
-        
-            <!-- Dungeon Escape -->
-            <div class="project-box">
-                <div class="image-container">
-                    <img class="project-image-large" src="img/Dungeon1.png" alt="Dungeon Escape image 1">
-                    <img class="project-image-large" src="img/Dungeon2.png" alt="Dungeon Escape image 2">
+                <h2 class="hm-entry-title">A Love Letter to Love Letter</h2>
+                <p class="hm-entry-meta"><a href="https://gitfront.io/r/romandidomizio/e4smkwEyUSU1/Software-Dev-Project/" target="_blank" rel="noopener" class="hm-entry-link">Software-Dev-Project repository</a></p>
+                <div class="hm-tags">
+                    <span class="hm-tag">Python</span>
+                    <span class="hm-tag">Flask</span>
+                    <span class="hm-tag">PostgreSQL</span>
+                    <span class="hm-tag">JavaScript</span>
+                    <span class="hm-tag">HTML/CSS</span>
+                    <span class="hm-tag">Agile (Scrum)</span>
                 </div>
-                <p class="project-name">Dungeon Escape</p>
-                <a href="https://github.com/romandidomizio/Dungeon-Escape-Game.git" target="_blank" style="color:#39FF14; text-align: center; display: block;">GitHub Repo Link</a>
-                <p class="technologies">Technologies: C++</p>
-                <ul class="project-description">
-                    <li>Developed a terminal-based C++ dungeon escape game with randomized levels, treasure encounters, and enemy AI.</li>
-                    <li>Achieved 100% error-free code through rigorous testing and GDB, demonstrating proficiency in C++.</li>
+                <ul class="hm-bullets" style="margin-top: 1rem;">
+                    <li>Developed a full-stack web-based card game using Python, Flask, PostgreSQL, JavaScript, and HTML/CSS</li>
+                    <li>Collaborated with a team using GitHub, Trello, and Agile (Scrum) for development and project management</li>
                 </ul>
-            </div>
-        
+            </article>
+
+            <!-- Dungeon Escape -->
+            <article class="hm-entry">
+                <div class="hm-media-pair">
+                    <img class="hm-entry-media" src="img/Dungeon1.png" alt="Dungeon Escape gameplay screenshot 1" width="800" height="600" loading="lazy">
+                    <img class="hm-entry-media" src="img/Dungeon2.png" alt="Dungeon Escape gameplay screenshot 2" width="800" height="600" loading="lazy">
+                </div>
+                <h2 class="hm-entry-title">Dungeon Escape</h2>
+                <p class="hm-entry-meta"><a href="https://github.com/romandidomizio/Dungeon-Escape-Game.git" target="_blank" rel="noopener" class="hm-entry-link">github.com/romandidomizio/Dungeon-Escape-Game</a></p>
+                <div class="hm-tags">
+                    <span class="hm-tag">C++</span>
+                </div>
+                <ul class="hm-bullets" style="margin-top: 1rem;">
+                    <li>Developed a terminal-based C++ dungeon escape game with randomized levels, treasure encounters, and enemy AI</li>
+                    <li>Achieved 100% error-free code through rigorous testing and GDB, demonstrating proficiency in C++</li>
+                </ul>
+            </article>
+
             <!-- Personal Website -->
-            <div class="project-box">
-                <img class="project-image-large" src="img/site.png" alt="Personal Website">
-                <p class="project-name">Personal Website</p>
-                <a href="https://github.com/romandidomizio/Personal-Website.git" target="_blank" style="color:#39FF14; text-align: center; display: block;">GitHub Repo Link</a>
-                <p class="technologies">Technologies: HTML, CSS, JavaScript</p>
-                <ul class="project-description">
-                    <li>Built this personal website to showcase my projects, education, and experience.</li>
-                    <li>Demonstrates my proficiency in frontend web development and design.</li>
+            <article class="hm-entry">
+                <img class="hm-entry-media" src="img/site.png" alt="Personal website screenshot" width="1000" height="432" loading="lazy">
+                <h2 class="hm-entry-title">Personal Website</h2>
+                <p class="hm-entry-meta"><a href="https://github.com/romandidomizio/Personal-Website.git" target="_blank" rel="noopener" class="hm-entry-link">github.com/romandidomizio/Personal-Website</a></p>
+                <div class="hm-tags">
+                    <span class="hm-tag">HTML</span>
+                    <span class="hm-tag">CSS</span>
+                    <span class="hm-tag">JavaScript</span>
+                </div>
+                <ul class="hm-bullets" style="margin-top: 1rem;">
+                    <li>Built this personal website to showcase my projects, education, and experience</li>
+                    <li>Demonstrates my proficiency in frontend web development and design</li>
                 </ul>
-            </div>
-        
+            </article>
         </div>
-    </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
 </body>
 </html>
